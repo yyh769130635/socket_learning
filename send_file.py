@@ -8,7 +8,7 @@ import socket
 
 
 sk = socket.socket()
-ip_port = ("127.0.0.1", 9999)
+ip_port = ("SGHZ001015127", 9999)
 
 sk.connect(ip_port)
 

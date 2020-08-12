@@ -13,6 +13,8 @@ ip_port = ("127.0.0.1", 8888)
 sk.bind(ip_port)
 
 while True:
-    data = sk.recv(1024)
+    #data = sk.recv(1024)
+    #print(data.decode())
 
-    print(data.decode())
+    data = sk.recvfrom(1024)
+    print(data)

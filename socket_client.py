@@ -16,7 +16,6 @@ ip_port = ("127.0.0.1", 8888)
 client.connect(ip_port)
 
 
-
 # 定义一个循环，不断地发送消息
 while True:
     # 接收主机信息

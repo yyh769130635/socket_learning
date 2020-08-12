@@ -8,14 +8,14 @@ import socket
 
 sk = socket.socket()
 
-ip_port = ("127.0.0.1", 9999)
+ip_port = ("SGHZ001015127", 8888)
 sk.bind(ip_port)
 sk.listen(5)
 
 while True:
-    conn,address = sk.accept()
+    conn, address = sk.accept()
     while True:
-        with open("file","ab") as f :
+        with open("file", "ab") as f:
             data = conn.recv(1024)
             if data == b"quit":
                 break

@@ -45,7 +45,7 @@ while True:
         # 处理客户端数据
         conn.send(data)
         # 发送随机出
-        conn.send(str(random.randint(1,1000)).encode())
+        conn.send(str(random.randint(1, 1000)).encode())
 
     # 主动关闭
     conn.close()
